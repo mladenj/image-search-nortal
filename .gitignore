@@ -1,0 +1,4 @@
+data/
+processing/
+.env
+.DS_Store
