@@ -14,9 +14,9 @@ pc = pinecone.Pinecone(api_key=os.environ.get("PINECONE_API_KEY"))
 
 # Mapping display values to actual index names
 index_display_map = {
-    "Aldo - Shoes and Accessories": "image-search-aldo-metadata",
-    "Hartlauer - Tech products": "image-search-hartlauer-crawled",
     "Asos - Latest Clothes & Fashion": "image-search-asos-metadata",
+    "Aldo - Shoes and Accessories": "image-search-aldo-metadata",
+    "Hartlauer - Tech products": "image-search-hartlauer-crawled"
 }
 
 # Default index name (if exists)
@@ -48,7 +48,7 @@ selected_index_name = index_display_map[selected_display_name]
 # Initialize the selected Pinecone index
 index = pc.Index(selected_index_name)
 
-st.write(f"Selected index name: {selected_index_name}")
+# st.write(f"Selected index name: {selected_index_name}")
 
 
 # Load the CLIP model
