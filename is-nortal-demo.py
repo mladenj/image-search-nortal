@@ -39,7 +39,7 @@ st.write("""
 selected_display_name = st.selectbox(
     "Choose an index to query:",
     list(index_display_map.keys()),  # Display values
-    index=list(index_display_map.keys()).index("Asos - Latest Clothes & Fashion")  # Default display name
+    index=list(index_display_map.keys()).index("Aldo - Shoes and Accessories")  # Default display name
 )
 
 # Get the internal index name for the selected display name
