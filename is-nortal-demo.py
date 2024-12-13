@@ -14,7 +14,7 @@ pc = pinecone.Pinecone(api_key=os.environ.get("PINECONE_API_KEY"))
 
 # Mapping display values to actual index names
 index_display_map = {
-    "Asos - Latest Clothes & Fashion": "image-search-asos-metadata",
+    # "Asos - Latest Clothes & Fashion": "image-search-asos-metadata",
     "Aldo - Shoes and Accessories": "image-search-aldo-metadata",
     "Hartlauer - Tech products": "image-search-hartlauer-crawled"
 }
